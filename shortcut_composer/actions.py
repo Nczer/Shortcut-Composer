@@ -100,6 +100,45 @@ def create_actions() -> list[ComplexActionInterface]: return [
         ],
     ),
 
+    # Cycle between basic selection tools (rectangular, elliptical, polygonal).
+    # After a long key press, go back to the FREEHAND BRUSH tool
+    templates.MultipleAssignment(
+        name="Additional-1",
+        controller=controllers.ToolController(),
+        default_value=Tool.FREEHAND_BRUSH,
+        values=[
+            Tool.RECTANGULAR_SELECTION,
+            Tool.ELIPTICAL_SELECTION,
+            Tool.POLYGONAL_SELECTION,
+        ],
+    ),
+
+    # Cycle between advanced selection tools (freehand, contiguous, similar color).
+    # After a long key press, go back to the FREEHAND BRUSH tool
+    templates.MultipleAssignment(
+        name="Additional-2",
+        controller=controllers.ToolController(),
+        default_value=Tool.FREEHAND_BRUSH,
+        values=[
+            Tool.FREEHAND_SELECTION,
+            Tool.CONTIGUOUS_SELECTION,
+            Tool.SIMILAR_COLOR_SELECTION,
+        ],
+    ),
+
+    # Cycle between path-based selection tools (bezier, magnetic, shape select).
+    # After a long key press, go back to the FREEHAND BRUSH tool
+    templates.MultipleAssignment(
+        name="Additional-3",
+        controller=controllers.ToolController(),
+        default_value=Tool.FREEHAND_BRUSH,
+        values=[
+            Tool.BEZIER_SELECTION,
+            Tool.MAGNETIC_SELECTION,
+            Tool.SHAPE_SELECT,
+        ],
+    ),
+
     # Cycle between brush presets values list.
     # After a long key press, go back to the "e) Marker Details" preset
     templates.MultipleAssignment(
