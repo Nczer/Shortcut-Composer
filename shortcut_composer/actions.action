@@ -52,6 +52,21 @@
         <icon>selectionMask</icon>
         </Action>
 
+        <Action name="Additional-1">
+        <activationFlags>1</activationFlags>
+        <icon>selectionMask</icon>
+        </Action>
+
+        <Action name="Additional-2">
+        <activationFlags>1</activationFlags>
+        <icon>selectionMask</icon>
+        </Action>
+
+        <Action name="Additional-3">
+        <activationFlags>1</activationFlags>
+        <icon>selectionMask</icon>
+        </Action>
+
         <Action name="Cycle brush presets">
         <activationFlags>1</activationFlags>
         <icon>krita_tool_freehand</icon>
