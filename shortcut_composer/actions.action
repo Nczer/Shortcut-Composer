@@ -52,19 +52,16 @@
         <icon>selectionMask</icon>
         </Action>
 
-        <Action name="Additional-1">
+        <Action name="Custom 1">
         <activationFlags>1</activationFlags>
-        <icon>selectionMask</icon>
         </Action>
 
-        <Action name="Additional-2">
+        <Action name="Custom 2">
         <activationFlags>1</activationFlags>
-        <icon>selectionMask</icon>
         </Action>
 
-        <Action name="Additional-3">
+        <Action name="Custom 3">
         <activationFlags>1</activationFlags>
-        <icon>selectionMask</icon>
         </Action>
 
         <Action name="Cycle brush presets">
