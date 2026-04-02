@@ -103,7 +103,7 @@ def create_actions() -> list[ComplexActionInterface]: return [
     # Cycle between basic selection tools (rectangular, elliptical, polygonal).
     # After a long key press, go back to the FREEHAND BRUSH tool
     templates.MultipleAssignment(
-        name="Additional-1",
+        name="Custom 1",
         controller=controllers.ToolController(),
         default_value=Tool.FREEHAND_BRUSH,
         values=[
@@ -116,7 +116,7 @@ def create_actions() -> list[ComplexActionInterface]: return [
     # Cycle between advanced selection tools (freehand, contiguous, similar color).
     # After a long key press, go back to the FREEHAND BRUSH tool
     templates.MultipleAssignment(
-        name="Additional-2",
+        name="Custom 2",
         controller=controllers.ToolController(),
         default_value=Tool.FREEHAND_BRUSH,
         values=[
@@ -129,7 +129,7 @@ def create_actions() -> list[ComplexActionInterface]: return [
     # Cycle between path-based selection tools (bezier, magnetic, shape select).
     # After a long key press, go back to the FREEHAND BRUSH tool
     templates.MultipleAssignment(
-        name="Additional-3",
+        name="Custom 3",
         controller=controllers.ToolController(),
         default_value=Tool.FREEHAND_BRUSH,
         values=[
