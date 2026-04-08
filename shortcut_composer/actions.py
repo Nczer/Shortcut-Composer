@@ -87,17 +87,70 @@ def create_actions() -> list[ComplexActionInterface]: return [
         values=[70, 50, 30, 100],
     ),
 
-    # Cycle between selection tools from values list.
+    # Cycle between selection tools (rectangular, elliptical, polygonal, freehand).
     # After a long key press, go back to the FREEHAND BRUSH tool
     templates.MultipleAssignment(
         name="Cycle selection tools",
         controller=controllers.ToolController(),
         default_value=Tool.FREEHAND_BRUSH,
         values=[
-            Tool.FREEHAND_SELECTION,
             Tool.RECTANGULAR_SELECTION,
-            Tool.CONTIGUOUS_SELECTION,
+            Tool.ELIPTICAL_SELECTION,
+            Tool.POLYGONAL_SELECTION,
+            Tool.FREEHAND_SELECTION,
         ],
+    ),
+
+    # Cycle between advanced selection tools (contiguous, similar color, bezier, magnetic).
+    # After a long key press, go back to the FREEHAND BRUSH tool
+    templates.MultipleAssignment(
+        name="Cycle selection tools 2",
+        controller=controllers.ToolController(),
+        default_value=Tool.FREEHAND_BRUSH,
+        values=[
+            Tool.CONTIGUOUS_SELECTION,
+            Tool.SIMILAR_COLOR_SELECTION,
+            Tool.BEZIER_SELECTION,
+            Tool.MAGNETIC_SELECTION,
+        ],
+    ),
+
+    # Cycle between fill and edit tools (gradient, fill, colorize mask, enclose and fill).
+    # After a long key press, go back to the FREEHAND BRUSH tool
+    templates.MultipleAssignment(
+        name="Cycle fill/edit tools",
+        controller=controllers.ToolController(),
+        default_value=Tool.FREEHAND_BRUSH,
+        values=[
+            Tool.GRADIENT,
+            Tool.FILL,
+            Tool.COLORIZE_MASK,
+            Tool.ENCLOSE_AND_FILL,
+        ],
+    ),
+
+    # Empty slot for custom cycling assignment
+    templates.MultipleAssignment(
+        name="Custom 1",
+        controller=controllers.ToolController(),
+        default_value=Tool.FREEHAND_BRUSH,
+        values=[],
+    ),
+
+    # Empty slot for custom cycling assignment
+    templates.MultipleAssignment(
+        name="Custom 2",
+        controller=controllers.ToolController(),
+        default_value=Tool.FREEHAND_BRUSH,
+        values=[],
+    ),
+
+    # Empty slot for custom cycling assignment
+    templates.MultipleAssignment(
+        name="Custom 3",
+        controller=controllers.ToolController(),
+        default_value=Tool.FREEHAND_BRUSH,
+        values=[],
     ),
 
     # Cycle between brush presets values list.
