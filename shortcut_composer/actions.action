@@ -52,6 +52,28 @@
         <icon>selectionMask</icon>
         </Action>
 
+        <Action name="Cycle selection tools 2">
+        <activationFlags>1</activationFlags>
+        <icon>selectionMask</icon>
+        </Action>
+
+        <Action name="Cycle fill/edit tools">
+        <activationFlags>1</activationFlags>
+        <icon>krita_tool_freehand</icon>
+        </Action>
+
+        <Action name="Custom 1">
+        <activationFlags>1</activationFlags>
+        </Action>
+
+        <Action name="Custom 2">
+        <activationFlags>1</activationFlags>
+        </Action>
+
+        <Action name="Custom 3">
+        <activationFlags>1</activationFlags>
+        </Action>
+
         <Action name="Cycle brush presets">
         <activationFlags>1</activationFlags>
         <icon>krita_tool_freehand</icon>
