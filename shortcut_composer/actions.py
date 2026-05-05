@@ -87,7 +87,7 @@ def create_actions() -> list[ComplexActionInterface]: return [
         values=[70, 50, 30, 100],
     ),
 
-    # Cycle between selection tools (rectangular, elliptical, polygonal, freehand).
+    # Cycle between selection tools (freehand, rectangular, elliptical, polygonal).
     # After a long key press, go back to the FREEHAND BRUSH tool
     templates.MultipleAssignment(
         name="Cycle selection tools",
