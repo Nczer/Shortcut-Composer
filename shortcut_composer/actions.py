@@ -94,10 +94,10 @@ def create_actions() -> list[ComplexActionInterface]: return [
         controller=controllers.ToolController(),
         default_value=Tool.FREEHAND_BRUSH,
         values=[
+            Tool.FREEHAND_SELECTION,
             Tool.RECTANGULAR_SELECTION,
             Tool.ELIPTICAL_SELECTION,
             Tool.POLYGONAL_SELECTION,
-            Tool.FREEHAND_SELECTION,
         ],
     ),
 
